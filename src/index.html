@@ -1,15 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title> Pomodoro App v2 </title>
+  <script src="https://kit.fontawesome.com/7b9acf3528.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.cdnfonts.com/css/comfortaa-3" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.scss">
 </head>
+
 <body>
-  <h1>Hello, World!</h1>
-  <p>Hello</p>
+  <header class="header">
+    <div class="container">
+      <h1 class="title">
+        <i class="fa-solid fa-eye"></i>
+        <span>pomotodo app</span>
+      </h1>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list__item">
+            <a href="#" class="nav__list__item__link">home</a>
+          </li>
+          <li class="nav__list__item">
+            <a href="#" class="nav__list__item__link">to-do</a>
+          </li>
+          <li class="nav__list__item">
+            <a href="#" class="nav__list__item__link">about</a>
+          </li>
+          <li class="nav__list__item">
+            <a href="#" class="nav__list__item__link">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="home" id="home">
+    <div class="container">
+      <div class="timer">
+        <div class="timer__display">
+          <div class="timer__display__message">Time to focus!</div>
+          <div class="timer__display__value">25:00</div>
+          <div class="timer__display__play">
+            <i class="fa-solid fa-play timer__display__play__icon"></i>
+          </div>
+        </div>
+        <div class="timer__options">
+          <div class="timer__options__item timer__options__item--active">focus</div>
+          <div class="timer__options__item">short break</div>
+          <div class="timer__options__item">long break</div>
+        </div>
+      </div>
+    </div>
+  </section>
   <script src="./scripts/main.js"></script>
 </body>
+
 </html>

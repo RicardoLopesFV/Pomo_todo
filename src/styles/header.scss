@@ -1,0 +1,39 @@
+
+@import "./variables.scss";
+
+.header {
+  height: 59px;
+  padding: 16px 0;
+  background-color: $headerBgColor;
+
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: $primaryFontColor;
+  }
+
+  .nav {
+      
+    &__list {
+      display: flex;
+      list-style: none;
+
+      &__item {
+        margin-left: 32px;
+
+        &__link {
+          font-size: 14px;
+          font-weight: bolder;
+          text-transform: uppercase;
+          text-decoration: none;
+          letter-spacing: 1px;
+          color: $primaryFontColor;
+        }
+      }
+    }
+  }
+}

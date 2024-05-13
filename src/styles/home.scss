@@ -1,0 +1,83 @@
+
+@import "./variables.scss";
+
+.home {
+  height: calc(100vh - 59px);
+  background-image: $homeBgColor;
+
+  .timer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 128px;
+
+    &__display {
+      width: 430px;
+      height: 430px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 64px;
+      color: $primaryFontColor;
+      background-color: rgba($color: $primaryFontColor, $alpha: 0.08);
+      border: 5px solid $primaryFontColor;
+      border-radius: 50%;
+
+      &__message {
+        padding: 12px 18px;
+        background-color: rgba($color: #000000, $alpha: 0.2);
+        font-size: 16px;
+        border-radius: 22px;
+      }
+
+      &__value {
+        font-size: 80px;
+      }
+
+      &__play {
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid $primaryFontColor;
+        border-radius: 50%;
+
+        &__icon {
+          margin-left: 6px;
+          font-size: 24px;
+        }
+      }
+    }
+
+    &__options {
+      width: 550px;
+      height: 64px;
+      display: flex;
+      justify-content: space-between;
+      background-color: rgba($color: $primaryFontColor, $alpha: 0.08);
+      border-radius: 50px;
+
+      &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        font-size: 18px;
+        font-weight: 600;
+        color: $primaryFontColor;
+        border-radius: 50px;
+      }
+
+      &__item--active {
+        background-color: $primaryFontColor;
+        color: $headerBgColor;
+        font-weight: 700;
+      }
+    }
+  }
+}
